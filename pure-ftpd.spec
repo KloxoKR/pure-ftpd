@@ -14,9 +14,11 @@ Source4:    pure-ftpd.pure-ftpwho.pam
 Source5:    pure-ftpd.pure-ftpwho.consoleapp
 Source6:    pure-ftpd.README.SELinux
 Source7:    pure-ftpd.pureftpd.te
-Patch0:     pure-ftpd-1.0.27-config.patch
-Patch2:     pure-ftpd-paminclude.patch
-Patch3:     pure-ftpd-paminclude-1.0.49.patch
+#Patch0:     pure-ftpd-1.0.27-config.patch
+#Patch2:     pure-ftpd-paminclude.patch
+#Patch3:     pure-ftpd-paminclude-1.0.49.patch
+Patch0:     0001-modify-pam.patch
+Patch1:     0002-fedora-specific-config-file.patch
 Provides:   ftpserver
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires:  pam-devel, perl, python, libcap-devel
@@ -71,8 +73,8 @@ Pure-FTPd to be protected in the same way other FTP servers are in Fedora
 
 %prep
 %setup -q
-%patch0 -p1 -b .config
-#%patch2 -p0 -b .paminclude
+#%patch0 -p1 -b .config
+#%patch1 -p0 -b .paminclude
 #%patch2 -p0 -b .paminclude
 install -pm 644 %{SOURCE6} README.SELinux
 mkdir selinux
