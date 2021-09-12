@@ -275,7 +275,7 @@ fi
 * Fri Dec 27 2019 John Pierce <john@luckytanuki.com> - 1.0.49-2.kng
 - Fix patches to restore pure-config.pl files
  
-* Sun Jun 15 2019 Mustafa Ramadhan <mustafa@bigraf.com> - 1.0.49-1.mr
+* Sat Jun 15 2019 Mustafa Ramadhan <mustafa@bigraf.com> - 1.0.49-1.mr
 - update to 1.0.49
 
 * Thu Mar 12 2015 Mustafa Ramadhan <mustafa@bigraf.com> - 1.0.37-1.mr
@@ -283,7 +283,7 @@ fi
 - without mysql and pgsql
 - detect init exists in preun/postun
 
-* Tue Feb 18 2013 Mustafa Ramadhan <mustafa@bigraf.com> - 1.0.36-5.mr
+* Mon Feb 18 2013 Mustafa Ramadhan <mustafa@bigraf.com> - 1.0.36-5.mr
 - use pureftp.xinetd from Kloxo-MR still
 
 * Tue Feb 5 2013 Mustafa Ramadhan <mustafa@bigraf.com> - 1.0.36-4.mr
@@ -305,7 +305,7 @@ fi
 - make pam and consolehelper's conf files noreplace (Aurelien Bompard)
 - fix bug #586513 (Aurelien Bompard)
 
-* Fri May 08 2008 Lubomir Rintel <lkundrak@v3.sk> - 1.0.21-16
+* Thu May 08 2008 Lubomir Rintel <lkundrak@v3.sk> - 1.0.21-16
 - Fix SITE UTIME (Nickolay Bunev, #498431)
 
 * Mon Feb 18 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.0.21-15
